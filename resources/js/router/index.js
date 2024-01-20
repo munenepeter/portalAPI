@@ -4,7 +4,9 @@ import {
 } from 'vue-router';
 
 import Index from '@/components/Index.vue';
-import AuthIndex from '@/components/Auth/Index.vue';
+import Login from '@/components/Auth/Login.vue';
+import Success from '@/components/Auth/Success.vue';
+
 
 const routes = [
     {
@@ -13,9 +15,14 @@ const routes = [
         component: Index
     },
     {
-        path: '/auth',
-        name: 'auth.index',
-        component: AuthIndex
+        path: '/login',
+        name: 'login',
+        component: Login
+    },
+    {
+        path: '/login/success',
+        name: 'login.success',
+        component: Success,
     },
    
 ];
